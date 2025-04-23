@@ -1,0 +1,23 @@
+button {
+  width: 100px;
+  height: 100px;
+  left: 40px;
+  margin: 30px;
+}
+span {
+  padding: 20px; 
+  text-align: center;
+  font-size: 50px;
+} 
+#button {
+  left: 1110px; 
+} 
+.but {
+  border-radius: 20px; 
+}
+body { 
+  background: linear-gradient(DeepSkyBlue, lightgreen, blue);
+}
+h1:hover {
+  color: blue; 
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>based</title>
+    <link href='/style/style.css' rel='stylesheet'>
+    <style>
+      .invisible {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id='title'>boom</h1>
+    <form id='start'>
+      <input type='radio' id='front' value='user' name='option' checked>
+      <label for='front'>user</label>
+      <input type='radio' id='back' value='environment' name='option'>
+      <label for='back'>environment</label>
+      <input type='submit'>
+      <input id='input'>
+    </form>
+    <div id='people'></div>
+    <script src='/socket.io/socket.io.js'></script>
+    <script>
+      var socket = io({autoConnect: false}) 
+      var people = document.getElementById('people')
+      var start = document.getElementById('start')
+      var mode = document.getElementById('input')
+      var title = document.getElementById('title')
+      start.addEventListener('submit', (e) => {
+        e.preventDefault()
+        socket.connect()
+        socket.emit('on')
+        if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+          var y = document.querySelector('input[name="option"]:checked').value;
+        socket.on('on', () => {
+          navigator.mediaDevices.getUserMedia({ video: {facingMode: y} }).then(function(stream) {
+          title.textContent = stream
+          console.log(stream)
+        //  socket.emit('user in', stream)
+          var video = document.createElement('video')
+          video.srcObject = stream;
+          video.play();
+          people.appendChild(video)
+        })
+        })
+        }
+      })
+      /*socket.on('video', (data) => {
+        people.textContent = null;
+        for (var i of data) {
+          var video = document.createElement('video')
+          video.srcObject = i
+          video.play();
+          people.appendChild(video)
+        }
+      })*/
+    </script>
+  </body>
+</html>

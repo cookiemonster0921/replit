@@ -1,0 +1,27 @@
+body {
+ background-color: purple; 
+}
+p {
+  font-size: 30px;
+  color: orange;
+  padding-left: 30px;
+  font-family: Impact;
+}
+#date, #day, #month, #year {
+  color: white; 
+} 
+#main {
+  font-size: 50px;
+} 
+p:hover {
+  color: lightgreen; 
+}
+input {
+  width: 200px; 
+}
+.test {
+  color: red; 
+}
+#am {
+  color: white;
+} 
