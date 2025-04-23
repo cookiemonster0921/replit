@@ -1,0 +1,20 @@
+button {
+  width: 100px;
+  height: 100px;
+  left: 40px;
+  margin: 30px;
+}
+span {
+  padding: 20px; 
+  text-align: center;
+  font-size: 50px;
+} 
+#button {
+  left: 110px; 
+} 
+body {
+  background-color: lightpink; 
+}
+h1:hover {
+  color: blue; 
+}

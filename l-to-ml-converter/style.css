@@ -1,0 +1,31 @@
+html {
+    background-color: lightseagreen;
+}
+#l, #ml {
+    border-radius: 10px;
+    height: 20px
+}
+h1 {
+    text-decoration: underline;
+    color: greenyellow;
+    padding: 10px 3px 10px 3px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+label {
+    font-size: 20px;
+    font-weight:bold;
+    text-transform: capitalize;
+    padding-bottom: 10%;
+    color: plum;
+
+}
+h3 {
+    text-transform:uppercase;
+    color:brown;
+}
+p {
+    text-transform: capitalize;
+    color: orange
+}
