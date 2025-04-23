@@ -1,0 +1,30 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+textarea {
+  flex: 33%;
+  height: 200px;
+  overflow: auto;
+  resize: none;
+  border: solid;
+  width: 300px;
+  font-family: 'Comic Sans MS';
+}
+.contain{
+  display: flex;
+}
+p {
+  text-align: center;
+}
+iframe {
+  width: 100%;
+  text-align: center;
+  border: solid black;
+  height: 300px;
+}
+button {
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+}

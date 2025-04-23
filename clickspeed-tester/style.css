@@ -1,0 +1,21 @@
+.invisible {
+  display: none; 
+}
+#begin {
+  width: 100px;
+  background-color: #99aab5;
+  border-radius: 20px;
+  color: #2c2f33;
+}
+body {
+  background-color: #7289da; 
+  text-align: center;
+}
+#start {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+h1 {
+  color: white;
+}

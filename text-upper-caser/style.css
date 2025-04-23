@@ -1,0 +1,25 @@
+.l {
+  text-transform: uppercase; 
+}
+.a {
+  text-transform: lowercase;
+}
+h1:hover {
+  text-transform: uppercase;
+  color: red;
+}
+h3:hover {
+  color: blue; 
+}
+input {
+  border-radius: 15px; 
+  background-color: yellow;
+  width: 300px;
+}
+div {
+ text-align: center;
+ background-color: lightblue;
+}
+#pppp:hover {
+   text-transform: lowercase;
+}

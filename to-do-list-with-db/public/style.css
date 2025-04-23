@@ -1,0 +1,48 @@
+.tick {
+  background-color: lightgreen; 
+}
+.del {
+  display: none; 
+}
+body {
+  background-color: aliceblue;
+}
+li, p {
+  font-size: 20px; 
+}
+button:hover {
+  color: orange;
+  background-color: green;
+  cursor: pointer;
+}
+button {
+  border-radius: 10px;
+  width: 300px;
+  background-color: blue;
+  color: white;
+} 
+input {
+  border-radius: 10px;
+  background-color: lightyellow;
+  width: 300px;
+} 
+input:hover {
+  cursor: text; 
+  background-color: lightgreen;
+}
+.test {
+  color: orange; 
+}
+table {
+  width: 500px; 
+  border: 2px solid black;
+}
+tr, td {
+  border: 1px solid black;
+}
+textarea {
+  width: 300px; 
+}
+body {
+  padding: 50px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vc</title>
+    <script defer src='/socket.io/socket.io.js'></script>
+    <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script defer src='/script.js'></script>
+    <style rel="stylesheet" href='/style.css'></style>
+    <style>
+      h1 {
+        color: green;
+      }
+      .invisible {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id='title'>what the heck</h1>
+    <p id='id'></p>
+    <form id='start'>
+      <input id='recipient'>
+      <input type='submit'>
+    </form>
+    <div id='grid'></div>
+    
+  </body>
+</html>
